@@ -1,0 +1,79 @@
+body {
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    margin: 0;
+    padding: 0;
+    line-height: 1.6;
+    color: #333;
+    background-color: #f4f4f4;
+}
+
+header, footer {
+    background-color: #007BFF;
+    color: #ffffff;
+    text-align: center;
+    padding: 20px 0;
+}
+
+header a, footer a {
+    color: #ffffff;
+}
+
+.container {
+    display: flex;
+    flex-wrap: wrap;
+    padding: 20px;
+}
+
+.left-column, .right-column {
+    flex: 1;
+    padding: 20px;
+}
+
+.right-column {
+    max-width: 35%;
+}
+
+.left-column {
+    max-width: 65%;
+}
+
+h1, h2 {
+    color: #333;
+}
+
+h2 {
+    background-color: #eeeeee;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+a {
+    color: #007BFF;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+}
+
+.skills ul li {
+    background-color: #007BFF;
+    color: #ffffff;
+    margin-bottom: 5px;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+@media screen and (max-width: 768px) {
+    .container {
+        flex-direction: column;
+    }
+
+    .left-column, .right-column {
+        max-width: 100%;
+    }
+
+    .right-column {
+        order: -1; /* Display skills above experience and education on smaller screens */
+    }
+}
